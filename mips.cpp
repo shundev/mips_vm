@@ -111,7 +111,6 @@ void MIPS::up()
                 {
                     case 32:
                         cout << "ADD\t";
-                        rs = 300;
                         goto finally;
                     case 34:
                         cout << "SUB\t";
@@ -139,7 +138,7 @@ void MIPS::up()
                     cout << shamt << "\t";
                     cout << funct << "\t";
                     cout << word;
-                break;
+                    break;
             case 2:
                 // 下26桁
                 address = word & 0x3FFFFFF;
